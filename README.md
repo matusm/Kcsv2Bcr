@@ -55,4 +55,6 @@ At.Matus.StatisticPod :  https://github.com/matusm/At.Matus.StatisticPod
 
 Bev.IO.BcrWriter: https://github.com/matusm/Bev.IO.BcrWriter 
 
+Bev.UI.ConsoleUI: https://github.com/matusm/Bev.UI.ConsoleUI
+
 CommandLineParser: https://github.com/commandlineparser/commandline 
