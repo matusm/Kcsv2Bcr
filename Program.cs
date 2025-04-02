@@ -125,6 +125,9 @@ namespace Kcsv2Bcr
                     bcrMetaData.Add("InvalidPointsReplacedBy", $"{GetReplaceValueFor(options.ReplaceType):F3}");
             }
             // include RawDictonary?
+            foreach (var entry in metaData.RawDictionary)
+                bcrMetaData.Add($"[{entry.Key}]", $"[{entry.Value}]");
+
             bcr.PrepareTrailerSection(bcrMetaData);
 
             using(new InfoFileWrite(outputFilename))

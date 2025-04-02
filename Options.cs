@@ -4,10 +4,6 @@ namespace Kcsv2Bcr
 {
     class Options
     {
-
-        [Option('b', "bias", Default = 0.0, HelpText = "bias value [um] to be subtracted.")]
-        public double Bias { get; set; }
-
         [Option('q', "quiet", HelpText = "Quiet mode. No screen output (except for errors).")]
         public bool BeQuiet { get; set; }
 
