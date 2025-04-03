@@ -166,9 +166,17 @@ namespace Kcsv2Bcr
             {
                 h.AutoVersion = false;
                 h.AdditionalNewLineAfterOption = false;
-                h.AddPreOptionsLine("\nProgram to convert scanning files by Keyence VK x-3000 to BCR or ISO 25178 - 71:2012 raster data format. ");
+                h.AddPreOptionsLine("\nProgram to convert scanning files by Keyence VK X-3000 to BCR or ISO 25178 - 71:2012 raster data format. ");
                 h.AddPreOptionsLine("");
                 h.AddPreOptionsLine($"Usage: {appName} InputPath [OutPath] [options]");
+                h.AddPostOptionsLine("");
+                h.AddPostOptionsLine("Supported values for -m, --mask:");
+                h.AddPostOptionsLine("   0: nop (keep invalid points)");
+                h.AddPostOptionsLine("   1: replace all invalid points by 0");
+                h.AddPostOptionsLine("   2: replace all invalid points by the minimum hight value");
+                h.AddPostOptionsLine("   3: replace all invalid points by the maximum hight value");
+                h.AddPostOptionsLine("   4: replace all invalid points by the average hight value");
+                h.AddPostOptionsLine("   5: replace all invalid points by the central hight value");
                 return HelpText.DefaultParsingErrorsHandler(result, h);
             }, e => e);
             Console.WriteLine(helpText);
