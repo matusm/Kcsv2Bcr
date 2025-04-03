@@ -27,6 +27,7 @@ namespace Kcsv2Bcr
                 case "nm":
                     return 1e-9;
                 case "µm":
+                case "um":  // in english files only ?
                     return 1e-6;
                 case "mm":
                     return 1e-3;
