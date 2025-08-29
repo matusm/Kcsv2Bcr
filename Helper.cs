@@ -27,7 +27,7 @@ namespace Kcsv2Bcr
                 case "nm":
                     return 1e-9;
                 case "µm":
-                case "um":  // in english files only ?
+                case "um":
                     return 1e-6;
                 case "mm":
                     return 1e-3;
@@ -59,5 +59,6 @@ namespace Kcsv2Bcr
             }
             return newTokens;
         }
+
     }
 }
