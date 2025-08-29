@@ -166,7 +166,7 @@ namespace Kcsv2Bcr
             {
                 h.AutoVersion = false;
                 h.AdditionalNewLineAfterOption = false;
-                h.AddPreOptionsLine("\nProgram to convert scanning files by Keyence VK X-3000 to BCR or ISO 25178 - 71:2012 raster data format. ");
+                h.AddPreOptionsLine("\nProgram to convert scanning files by Keyence VK X-3000 to BCR or ISO 25178-71:2012 raster data format. ");
                 h.AddPreOptionsLine("");
                 h.AddPreOptionsLine($"Usage: {appName} InputPath [OutPath] [options]");
                 h.AddPostOptionsLine("");
