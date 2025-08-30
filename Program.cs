@@ -124,9 +124,11 @@ namespace Kcsv2Bcr
                 if(options.ReplaceNaN)
                     bcrMetaData.Add("InvalidPointsReplacedBy", $"{GetReplaceValueFor(options.ReplaceType):F3}");
             }
-            // include RawDictonary?
-            foreach (var entry in metaData.RawDictionary)
+            if(options.ExtendedTrailer)
+            { 
+                foreach (var entry in metaData.RawDictionary)
                 bcrMetaData.Add($"[{entry.Key}]", $"[{entry.Value}]");
+            }
 
             bcr.PrepareTrailerSection(bcrMetaData);
 

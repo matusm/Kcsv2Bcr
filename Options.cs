@@ -19,6 +19,9 @@ namespace Kcsv2Bcr
         [Option("iso", HelpText = "Output file ISO 25178-71:2012 compliant.")]
         public bool IsoFormat { get; set; }
 
+        [Option('e', "extended", HelpText = "Output file with extended trailer.")]
+        public bool ExtendedTrailer { get; set; }
+
         [Value(0, MetaName = "InputPath", Required = true, HelpText = "Input file-name including path")]
         public string InputPath { get; set; }
 
