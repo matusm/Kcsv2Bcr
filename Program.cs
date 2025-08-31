@@ -51,11 +51,12 @@ namespace Kcsv2Bcr
                             break;
                     }
                 }
-                if (!metaData.IsValid)
-                {
-                    ConsoleUI.ErrorExit("Metadata invalid!", 1);
-                }
                 #endregion
+            }
+
+            if (!metaData.IsValid)
+            {
+                ConsoleUI.ErrorExit("Metadata invalid!", 1);
             }
 
             Field field = new Field(metaData.NumPoints, metaData.NumProfiles);

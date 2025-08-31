@@ -4,6 +4,7 @@ namespace Kcsv2Bcr
 {
     public static class Translator
     {
+        // the korean characters are double-byte characters and do not work here.
         private static readonly Dictionary<string, string> dict = new Dictionary<string, string>()
         {
             { "Gemessenes Datum",      "CreateDate" },
