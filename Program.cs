@@ -46,8 +46,7 @@ namespace Kcsv2Bcr
                     string line = string.Empty;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string[] tokens = Helper.Tokenizer(line);
-                        metaData.Add(tokens);
+                        metaData.Add(line);
                         if (metaData.DelimiterReached)
                             break;
                     }
@@ -69,8 +68,7 @@ namespace Kcsv2Bcr
                     string line = string.Empty;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string[] tokens = Helper.Tokenizer(line);
-                        field.AddProfile(tokens);
+                        field.AddProfile(line);
                     }
                 }
                 #endregion

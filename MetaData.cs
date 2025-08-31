@@ -30,7 +30,9 @@ namespace Kcsv2Bcr
         public bool DelimiterReached { get; private set; } = false;
         public bool IsValid => IsMetadataValid();
 
-        public void Add(string[] tokens)
+        public void Add(string line) => Add(Helper.Tokenizer(line));
+
+        private void Add(string[] tokens)
         {
             string[] translatedParts = Translate(tokens);
             switch (translatedParts.Length)
@@ -123,9 +125,6 @@ namespace Kcsv2Bcr
                 return false;
             return true;
         }
-
-    
-
 
     }
 }

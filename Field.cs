@@ -21,7 +21,9 @@ namespace Kcsv2Bcr
             runningProfile = 0;
         }
 
-        public void AddProfile(string[] tokens)
+        public void AddProfile(string line) => AddProfile(Helper.Tokenizer(line));
+
+        private void AddProfile(string[] tokens)
         {
             if (tokens.Length != NumPoints)
                 return;
