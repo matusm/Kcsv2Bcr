@@ -20,7 +20,9 @@ Kcsv2Bcr inputfile [outputfile] [options]
 
 `--iso` : Force output file to be ISO 25178-71:2012 compliant (not recommended, Gwyddion will currently ignore metadata of this format).
 
-`--mask (-m)` : Replace (mask) missing or invalid data points with a neutral value. Supported values are:
+`--extended (-e)` : Output file with extended trailer (all metadata of the original CSV file).
+
+`--mask (-m)` : Replace (or mask) missing or invalid data points with a neutral value. Supported values are:
 
 0: do nothing (invalid points stay invalid)
 
@@ -44,7 +46,7 @@ Kcsv2Bcr inputfile [outputfile] [options]
 
 ### Caveats
 
-Due to limmited example data the app works only for specific cases. The keywords in the file to be converted must be in German language. The app will not work with data produced on a computer with different locale. The decimal separator must be the dot on the line, however.
+The keywords in the file to be converted must be in English or German language. The app will not work with data produced on a computer with different locale like Korean or Chinese. The decimal separator must be the dot on the line in any case.
 
 ## Installation
 
