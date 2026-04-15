@@ -33,14 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="At.Matus.IO.BcrWriter">
+      <HintPath>..\At.Matus.IO.BcrWriter\At.Matus.IO.BcrWriter\bin\Release\At.Matus.IO.BcrWriter.dll</HintPath>
+    </Reference>
     <Reference Include="At.Matus.StatisticPod">
       <HintPath>..\At.Matus.StatisticPod\bin\Release\At.Matus.StatisticPod.dll</HintPath>
     </Reference>
-    <Reference Include="Bev.IO.BcrWriter">
-      <HintPath>..\Bev.IO.BcrWriter\Bev.IO.BcrWriter\bin\Release\Bev.IO.BcrWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="Bev.UI">
-      <HintPath>..\Bev.UI.ConsoleUI\Bev.UI\bin\Release\Bev.UI.dll</HintPath>
+    <Reference Include="At.Matus.UI.ConsoleUI">
+      <HintPath>..\At.Matus.UI.ConsoleUI\At.Matus.UI.ConsoleUI\bin\Release\At.Matus.UI.ConsoleUI.dll</HintPath>
     </Reference>
     <Reference Include="CommandLine, Version=2.9.1.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
       <HintPath>packages\CommandLineParser.2.9.1\lib\net461\CommandLine.dll</HintPath>

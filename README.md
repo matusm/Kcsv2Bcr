@@ -4,13 +4,13 @@ Kcsv2Bcr - Keyence CSV to BCR Converter
 A standalone command line tool that converts files produced by the [Keyence](https://www.keyence.com) VK-X3000 3D Surface Profiler .
 The converted GPS data files are formatted according to ISO 25178-7, ISO 25178-71 and EUNA 15178 (BCR). All files are ASCII (text) files, the (currently deprecated) option to produce binary files is not implemented. The data produced with the surface profiler must be exported as a CSV file, other formats can not be used with this software
 
-## Command Line Usage:  
+## Command Line Usage:
 
 ```
 Kcsv2Bcr inputfile [outputfile] [options]
 ```
 
-## Options:  
+## Options:
 
 `--quiet (-q)` : Quiet mode. No screen output (except for errors).
 
@@ -52,11 +52,12 @@ The keywords in the file to be converted must be in English or German language. 
 
 If you do not want to build the application from the source code you can use the released binaries. Just copy the .exe and the .dll files to a directory of your choice. This direcory should be included in the user's PATH variable.
 
-## Dependencies  
-At.Matus.StatisticPod :  https://github.com/matusm/At.Matus.StatisticPod  
+## Dependencies and Acknowledgments
+* [At.Matus.StatisticPod](https://github.com/matusm/At.Matus.StatisticPod)
+* [At.Matus.IO.BcrWriter](https://github.com/matusm/At.Matus.IO.BcrWriter)
+* [At.Matus.UI.ConsoleUI](https://github.com/matusm/At.Matus.UI.ConsoleUI)
+* [CommandLineParser](https://github.com/commandlineparser/commandline)
 
-Bev.IO.BcrWriter: https://github.com/matusm/Bev.IO.BcrWriter 
+---
 
-Bev.UI.ConsoleUI: https://github.com/matusm/Bev.UI.ConsoleUI
-
-CommandLineParser: https://github.com/commandlineparser/commandline 
+**Note**: This library is not officially affiliated with or endorsed by KEYENCE CORPORATION.
