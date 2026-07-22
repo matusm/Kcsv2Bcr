@@ -1,7 +1,7 @@
 Kcsv2Bcr - Keyence CSV to BCR Converter
 =======================================
 
-A standalone command line tool that converts files produced by the [Keyence](https://www.keyence.com) VK-X3000 3D Surface Profiler .
+A standalone command line tool that converts files produced by the [Keyence](https://www.keyence.com) VK-X3000 3D Surface Profiler.
 The converted GPS data files are formatted according to ISO 25178-7, ISO 25178-71 and EUNA 15178 (BCR). All files are ASCII (text) files, the (currently deprecated) option to produce binary files is not implemented. The data produced with the surface profiler must be exported as a CSV file, other formats can not be used with this software
 
 ## Command Line Usage:
@@ -44,9 +44,9 @@ Kcsv2Bcr inputfile [outputfile] [options]
 
 * Invalid data points are coded by the string `BAD` instead of `NaN`.
 
-### Caveats
+## Caveats
 
-The keywords in the file to be converted must be in English or German language. The app will not work with data produced on a computer with different locale like Korean or Chinese. The decimal separator must be the dot on the line in any case.
+The keywords in the file to be converted must be in English or German language. The app will not work with data produced on a computer with different locale like Korean or Chinese. The decimal separator must be the dot on the line in any case. The value separator must be the comma (as the name CSV implies).
 
 ## Installation
 
