@@ -13,6 +13,7 @@ namespace Kcsv2Bcr
     class Program
     {
         private static Options options = new Options(); // this must be set in Run()
+        private static readonly Encoding encoding = Encoding.GetEncoding("iso-8859-1");
 
         static void Main(string[] args)
         {
@@ -41,7 +42,7 @@ namespace Kcsv2Bcr
             using (new InfoOperation("Analyzing metadata"))
             {
                 #region get metadata
-                using (var reader = new StreamReader(inputFilename, Encoding.UTF7))
+                using (var reader = new StreamReader(inputFilename, encoding))
                 {
                     string line = string.Empty;
                     while ((line = reader.ReadLine()) != null)
@@ -64,7 +65,7 @@ namespace Kcsv2Bcr
             using (new InfoFileRead(inputFilename))
             {
                 #region get topography data
-                using (var reader = new StreamReader(inputFilename, Encoding.UTF7))
+                using (var reader = new StreamReader(inputFilename, encoding))
                 {
                     string line = string.Empty;
                     while ((line = reader.ReadLine()) != null)
